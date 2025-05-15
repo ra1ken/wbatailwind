@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+@theme {
+  --color-zelena: #74C69D;
+}

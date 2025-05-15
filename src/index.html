@@ -1,13 +1,76 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wbatailwind</title>
   <link href="./output.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+
+<body class="min-h-screen">
+  <div class="bg-zelena pb-12">
+    <nav class="container mx-auto px-6 py-6 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="/src/images/logo.svg" alt="Logo" class="h-10">
+        <span class="text-white text-2xl font-bold"></span>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#" class="text-white">Home</a>
+        <a href="#" class="text-white">Portfolio</a>
+        <a href="#" class="text-white">Services</a>
+        <a href="#" class="text-white">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button class="text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div class="container mx-auto px-6 py-12 md:py-24 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <h2 class="uppercase text-white tracking-wider mb-4">Welcome</h2>
+        <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+          Lorem ipsum dolor sit amet consectetur
+        </h1>
+        <p class="text-white/90 mb-8 max-w-md">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab dolor aperiam nobis cum
+          est eos error ipsum, voluptate culpa nesciunt delectus iste?
+        </p>
+        <button class="bg-white text-emerald-600 px-8 py-3 rounded-md font-medium hover:bg-white/90 transition-colors">
+          Explore
+        </button>
+      </div>
+      <div class="md:w-1/2">
+        <img src="/src/images/hero.svg" alt="Team collaboration illustration" class="w-full">
+      </div>
+    </div>
+  </div>
+  <div class="py-16">
+    <div class="container mx-auto px-6 text-center">
+      <p class="uppercase text-gray-500 tracking-wider mb-2">Partners</p>
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Lorem Ipsum Dolor</h2>
+      <p class="text-gray-600 max-w-md mx-auto mb-10">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos.
+      </p>
+      <div class="flex flex-wrap justify-center items-center gap-8 mb-10">
+        <img src="/src/images/google.svg" alt="Google" class="h-12 w-32 object-contain">
+        <img src="/src/images/microsoft.svg" alt="Microsoft" class="h-12 w-32 object-contain">
+        <img src="/src/images/airbnb.svg" alt="Airbnb" class="h-12 w-32 object-contain">
+        <img src="/src/images/facebook.svg" alt="Facebook" class="h-12 w-32 object-contain">
+        <img src="/src/images/spotify.svg" alt="Spotify" class="h-12 w-32 object-contain">
+      </div>
+
+      <button class="bg-gray-900 text-white px-6 py-2 rounded-md font-medium hover:bg-gray-800 transition-colors">
+        Learn More
+      </button>
+    </div>
+  </div>
 </body>
+
 </html>
